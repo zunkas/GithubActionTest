@@ -17,6 +17,7 @@ branches:
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch: false
+    source-branches: ['master']
   release:
     regex: ^releases?[/-]
     mode: ContinuousDelivery
@@ -67,7 +68,7 @@ branches:
   develop:
     regex: ^dev(elop)?(ment)?$
     mode: ContinuousDeployment
-    tag: unstable
+    tag: alpha
     increment: Minor
     prevent-increment-of-merged-branch-version: false
     track-merge-target: true
